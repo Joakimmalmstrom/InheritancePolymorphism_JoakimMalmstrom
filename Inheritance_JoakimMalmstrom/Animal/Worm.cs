@@ -5,9 +5,6 @@
         public bool IsPoisonous { get; set; }
         public Worm(string name, int age, double weight, bool isPoisonous) : base(name, age, weight)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
             IsPoisonous = isPoisonous;
         }
         

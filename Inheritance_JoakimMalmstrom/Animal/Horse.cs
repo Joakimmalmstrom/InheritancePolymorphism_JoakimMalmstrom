@@ -5,9 +5,6 @@
         public bool Jump { get; set; }
         public Horse(string name, int age, double weight, bool jump) : base(name, age, weight)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
             Jump = jump;
         }
 

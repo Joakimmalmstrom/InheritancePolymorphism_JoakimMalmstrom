@@ -23,49 +23,49 @@ namespace Inheritance_JoakimMalmstrom
 
             // ANIMALS
 
-            //Animal horse = new Horse("Shadowfax", 10, 200, true);
-            //Wolf wolfman = new Wolfman("Wolfie", 13, 13, true);
-            //Bird bird = new Bird("Bird", 15, 150, 150);
-            //Bird pelican = new Pelican("Pelican", 20, 13, 50, 20);
-            //Dog labrador = new Dog("Laika", 6, 30, "Labrador");
-            //Dog rotweiler = new Dog("Tanja", 10, 45, "rotweiler");
+            Animal horse = new Horse("Shadowfax", 10, 200, true);
+            Animal wolfman = new Wolfman("Wolfie", 13, 13, true);
+            Animal bird = new Bird("Bird", 15, 150, 150);
+            Animal pelican = new Pelican("Pelican", 20, 13, 50, 20);
+            Dog labrador = new Dog("Laika", 6, 30, "Labrador");
+            Dog rotweiler = new Dog("Tanja", 10, 45, "rotweiler");
 
-            //List<Animal> animals = new List<Animal>() { horse, wolfman, bird, pelican, rotweiler };
-            //List<Dog> dogs = new List<Dog>() { labrador, rotweiler, /*horse*/};
+            List<Animal> animals = new List<Animal>() { horse, wolfman, bird, pelican, rotweiler };
+            List<Dog> dogs = new List<Dog>() { labrador, rotweiler, /*horse*/};
 
-            //foreach (var a in animals)
-            //{
-            //    var tempInterface = a as IPerson;
-            //    var tempDog = a as Dog;
+            foreach (var a in animals)
+            {
+                var tempInterface = a as IPerson;
+                var tempDog = a as Dog;
 
-            //    if (tempInterface is IPerson)
-            //    {
-            //        PrintWolfMan(a.Name, a.DoSound(), tempInterface.Talk());
-            //    }
-            //    else if (tempDog is Dog)
-            //    {
-            //        PrintDog(a.Name, a.DoSound(), a.Stats(), tempDog.Bark());
-            //    }
-            //    else
-            //    {
-            //        PrintAnimal(a.Name, a.DoSound());
-            //    }
-            //}
+                if (tempInterface is IPerson i)
+                {
+                    PrintWolfMan(a.Name, a.DoSound(), i.Talk());
+                }
+                else if (tempDog is Dog dog)
+                {
+                    PrintDog(a.Name, a.DoSound(), a.Stats(), dog.Bark());
+                }
+                else
+                {
+                    PrintAnimal(a.Name, a.DoSound());
+                }
+            }
 
             // USER ERRORS
 
-            UserError numeric = new NumericInputError();
-            UserError text = new TextInputError();
-            UserError blank = new BlankError();
-            UserError special = new SpecialCharacterError();
-            UserError invalid = new InvalidCharacterError();
+            //UserError numeric = new NumericInputError();
+            //UserError text = new TextInputError();
+            //UserError blank = new BlankError();
+            //UserError special = new SpecialCharacterError();
+            //UserError invalid = new InvalidCharacterError();
 
-            List<UserError> userErrors = new List<UserError>() { numeric, text, blank, special, invalid };
+            //List<UserError> userErrors = new List<UserError>() { numeric, text, blank, special, invalid };
 
-            foreach (var u in userErrors)
-            {
-                Console.WriteLine(u.UEMessage());
-            }
+            //foreach (var u in userErrors)
+            //{
+            //    Console.WriteLine(u.UEMessage());
+            //}
 
             Console.ReadLine();
         }

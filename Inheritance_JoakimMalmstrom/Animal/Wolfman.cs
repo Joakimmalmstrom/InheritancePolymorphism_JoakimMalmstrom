@@ -4,10 +4,6 @@
     {
         public Wolfman(string name, int age, double weight, bool isPackLeader) : base(name, age, weight, isPackLeader)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
-            base.IsPackLeader = isPackLeader;
         }
 
         public string Talk()

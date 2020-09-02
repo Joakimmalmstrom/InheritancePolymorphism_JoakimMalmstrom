@@ -6,9 +6,6 @@
 
         public Dog(string name, int age, double weight, string breed) : base(name, age, weight)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
             Breed = breed;
         }
 

@@ -7,9 +7,6 @@
         // Question 1: Add additional property for all the birds
         public Bird(string name, int age, double weight, double wingSpan) : base(name, age, weight)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
             WingSpan = wingSpan;
         }
         

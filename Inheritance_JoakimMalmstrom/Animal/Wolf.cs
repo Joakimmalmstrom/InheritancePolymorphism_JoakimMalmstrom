@@ -6,9 +6,6 @@
 
         public Wolf(string name, int age, double weight, bool isPackLeader) : base(name, age, weight)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
             IsPackLeader = isPackLeader;
         }
         

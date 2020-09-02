@@ -5,10 +5,6 @@
         public double LegLength { get; set; }
         public Flamingo(string name, int age, double weight, double wingSpan, double legLength) : base(name, age, weight, wingSpan)
         {
-            base.Name = name;
-            base.Age = age;
-            base.Weight = weight;
-            base.WingSpan = wingSpan;
             LegLength = legLength;
         }
 
